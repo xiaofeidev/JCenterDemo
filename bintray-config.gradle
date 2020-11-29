@@ -1,0 +1,46 @@
+ext {
+    //bintray 网站上你创建的仓库的名字（必配项），其值需与自己在 JCenter 上创建的 Repository 的名字一致
+    bintrayRepo = 'repo'
+    //在这个仓库下的 package name（必配项），其值需与自己在 JCenter 上创建的 Repository 下的 package 的名字一致
+    bintrayName = 'hello'
+    //以上两项是必配的指向 Bintray 网站上你的仓库名和仓库下的 package 名
+
+    //以下三项均为必配项
+    //publishedGroupId:artifact:libraryVersion 构成你开源库的唯一路径
+    //例如：com.github.xiaofeidev:hello:1.0.0，在build.gradle里就可以根据这个路径来 implementation 依赖库了
+    publishedGroupId = 'com.github.xiaofeidev'
+    artifact = 'hello'
+    libraryVersion = "1.0.0"
+
+    //对开源库的描述描述信息
+    libraryName = 'hello'
+    libraryDescription = 'JCenter Demo 演示'
+    siteUrl = 'https://github.com/xiaofei-dev/JCenterDemo/'
+
+    //开源库对应的 github 地址
+    gitUrl = 'https://github.com/xiaofei-dev/JCenterDemo.git'
+
+    //开发者信息
+    developerId = 'xiaofei_dev'
+    developerName = 'xiaofei_dev'
+    developerEmail = 'xiaofei.dev@gmail.com'
+
+    //开源协议
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+
+    //打包&上传用到的 gradle 命令
+//    gradlew install
+//    gradlew bintrayUpload
+
+//    gradlew install 用于将项目编译、打包生成 pom，aar 等文件；
+//    gradlew bintrayUpload 用于将生成的 pom，aar 等文件上传至 bintray 仓库中；
+
+    //打包&上传用到的 gradle 命令
+//    gradlew install
+//    gradlew bintrayUpload
+
+//    gradlew install 用于将项目编译、打包生成 pom，aar 等文件；
+//    gradlew bintrayUpload 用于将生成的 pom，aar 等文件上传至 bintray 仓库中；
+}
